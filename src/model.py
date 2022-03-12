@@ -15,7 +15,7 @@ class BERTClass(torch.nn.Module):
     def __init__(self):
         super(BERTClass, self).__init__()
         self.l1 = transformers.BertModel.from_pretrained(MODEL_NAME_OR_PATH)
-        self.l2 = torch.nn.Dropout(0.3)
+        self.l2 = torch.nn.Dropout(0.2)
         self.l3 = torch.nn.Linear(HIDDEN_LAYER_SIZE, 6)
 
     def forward(self, ids, mask, token_type_ids):

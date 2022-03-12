@@ -35,7 +35,7 @@ class CustomDataset(Dataset):
             max_length=self.max_len,
             padding='max_length',
             return_token_type_ids=True,
-            truncation='second_only'
+            truncation='only_second'
         )
         ids = inputs['input_ids']
         mask = inputs['attention_mask']

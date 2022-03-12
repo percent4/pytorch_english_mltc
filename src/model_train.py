@@ -39,7 +39,7 @@ def train_model(start_epochs, n_epochs, valid_loss_min_input, training_loader, v
             optimizer.zero_grad()
             loss = loss_fn(outputs, targets)
             if batch_idx % 100 == 0:
-                print(f'Epoch: {epoch}, BATCH： {batch_idx}, Training Loss:  {loss.item()}')
+                print(f'Epoch: {epoch}, BATCH: {batch_idx}, Training Loss:  {loss.item()}')
 
             optimizer.zero_grad()
             loss.backward()
