@@ -10,6 +10,8 @@
 
 ### 模型结构图
 
+![模型结构图](https://raw.githubusercontent.com/percent4/pytorch_english_mltc/master/docs/model_structure.png)
+
 ### 模型效果
 
 |模型|max length|batch size|private score|rank|
